@@ -1,0 +1,7 @@
+@import './resets', './theme/typography.scss', './theme/palette.scss' ;
+
+body {
+    font-family: $ff-sans;
+    background: map-get($map: $palette, $key: 'bg-dark');
+    color: map-get($map: $palette, $key: 'fg-light');
+}
