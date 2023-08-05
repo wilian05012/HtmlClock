@@ -1,15 +1,11 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 HTML Analog clock
 
-This project has been created using **webpack-cli**, you can now run
+This project reproduces the analog clock screensaver available for Fire OS using mainly HTML, CSS nd a little bit of Javascript.
 
-```
-npm run build
-```
-
-or
+After cloning the project please run:
 
 ```
-yarn build
+npm install
+npm run serve
 ```
 
-to bundle your application
