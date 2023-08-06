@@ -1,3 +1,5 @@
 import './styles/index.scss';
+import { Clock } from './classes/clock';
 
-console.log("Hello World!");
+const clock = new Clock();
+
