@@ -1,1 +1,11 @@
+@font-face {
+    font-family: 'Digital 7 Mono';
+    src: url("<%= require('../../assets/fonts/digital.ttf') %>");
+}
+
 $ff-sans: sans-serif;
+$ff-digital: 'Digital 7 Mono';
+
+.digital {
+    font-family: 'Digital 7 Mono', monospace;
+}
