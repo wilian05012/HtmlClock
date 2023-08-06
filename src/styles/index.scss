@@ -58,9 +58,8 @@ body {
         height: 12px;
         background: map-get($map: $palette, $key: 'accent1');
         clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%);
-        transform: 
-            rotate(-90deg)
-            translateX(26%);
+        transform: translateX(26%);
+        animation: full-turn 60s linear infinite;
     }
     #pivot {
         z-index: 30;
@@ -68,5 +67,14 @@ body {
         aspect-ratio: 1;
         border-radius: 50%;
         background-color: map-get($map: $palette, $key: 'bg-dark');
+    }
+}
+
+@keyframes full-turn {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
     }
 }
