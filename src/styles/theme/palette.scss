@@ -3,3 +3,5 @@ $palette: (
     fg-light: hsl(0, 0%, 90%),
     accent1: hsl(0, 76%, 60%)
 );
+
+.fg-accent1 { color: map-get($map: $palette, $key: 'accent1'); }

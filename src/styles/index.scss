@@ -70,6 +70,40 @@ body {
     }
 }
 
+#digitalClock {
+    display: grid;
+    place-content: center;
+}
+
+#digitalDisplay {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    & > div {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.digit {
+    font-family: 'DigitalMono';
+    display: grid;
+    place-content: center;
+    grid-template-areas: 'a1';
+    & > * {
+        grid-area: a1;
+    }
+    & > div:last-child {
+        opacity: 0.3;
+        color: map-get($map: $palette, $key: 'fg-light');
+    }
+}
+
+#dateDisplay {
+    text-align: center;
+}
+
 @keyframes full-turn {
     0% {
         rotate: 0deg;

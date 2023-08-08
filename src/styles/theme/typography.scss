@@ -1,11 +1,20 @@
 @font-face {
-    font-family: 'Digital 7 Mono';
-    src: url("<%= require('../../assets/fonts/digital.ttf') %>");
+    font-family: 'DigitalMono';
+    src: url('../../src/assets/fonts/digital.ttf');
+}
+@font-face {
+    font-family: 'Repetition';
+    src: url('../../src/assets/fonts/repetition.ttf');
 }
 
 $ff-sans: sans-serif;
-$ff-digital: 'Digital 7 Mono';
+$ff-digital: 'DigitalMono';
+$ff-repetition: 'Repetition';
 
-.digital {
-    font-family: 'Digital 7 Mono', monospace;
+.digital { font-family: $ff-digital, monospace; }
+.digiboard { font-family: $ff-repetition, monospace; }
+
+
+@for $i from 2 through 5 {
+    .fs-#{$i}x { font-size: calc($i * 1em); }
 }
