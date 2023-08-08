@@ -25,6 +25,12 @@ export class Clock {
 
         secsElem1.textContent = (secs.length == 2) ? secs[0] : '0';
         secsElem2.textContent = (secs.length == 2) ? secs[1] : secs[0];
+
+        if(hoursElem1.textContent === '0') {
+            hoursElem1.classList.add('transparent');
+        } else {
+            hoursElem1.classList.remove('transparent');
+        }
     }
 
 
