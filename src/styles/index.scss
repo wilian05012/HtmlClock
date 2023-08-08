@@ -94,14 +94,26 @@ body {
     & > * {
         grid-area: a1;
     }
-    & > div:last-child {
-        opacity: 0.3;
+    & > div:first-child {
+        opacity: 0.1;
         color: map-get($map: $palette, $key: 'fg-light');
+    }
+    & > div:last-child {
+        opacity: 1;
+        color: map-get($map: $palette, $key: 'accent1');
     }
 }
 
+.separator { margin-inline: -25px; }
+.blinking { animation: blink 1s linear infinite; }
+
 #dateDisplay {
     text-align: center;
+}
+
+@keyframes blink {
+    10% { opacity: 0; }
+    75% { opacity: 1; }
 }
 
 @keyframes full-turn {
